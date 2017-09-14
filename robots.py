@@ -24,7 +24,7 @@ $$ |  $$ |\$$$$$$  |$$$$$$$  |\$$$$$$  | \$$$$  |$$$$$$$  |$$\ $$$$$$$  |\$$$$$$
 
 print 'Trying to fetch robots.txt from the supplied URL'
 robotsURL = host+'/robots.txt'
-fakeUAHeader = {'User-Agent': 'Googlebot/2.1'} # spoof googlebot UA in order to bypass whitelist
+fakeUAHeader = {'User-Agent': 'Googlebot/2.1'} # spoof googlebot UA
 
 try:
 	r = requests.get(robotsURL, headers=fakeUAHeader)
